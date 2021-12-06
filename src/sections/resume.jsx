@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import Card from '../components/card';
 import AudioPlayer from '../components/audio-player';
 import { soundClips_plasticMan } from '../../public/sounds';
-import { DownloadButton } from '../components/audio-controller';
 import ReactGA from 'react-ga';
 
 import dynamic from 'next/dynamic';
@@ -79,13 +78,12 @@ const ResumeSection = ({ inView }) => {
     return (
         <Layout id="resume" reverse>
             <ContentContainer>
-                <Card
-                    title="R&Eacute;SUM&Eacute;"
-                    
-                >
+                <Card title="R&Eacute;SUM&Eacute;">
                     <PdfViewer />
                     <LinkContainer>
-                        <DownloadButton path="/docs/Resume2021B.pdf" text="Download" />
+                        <DownloadLink href="/docs/Resume2021B.pdf" download>
+                            Download
+                        </DownloadLink>
                     </LinkContainer>
                 </Card>
             </ContentContainer>
