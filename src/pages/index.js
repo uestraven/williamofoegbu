@@ -229,11 +229,17 @@ const WilliamOfoegbu = ({ origin }) => {
   };
 
   const handle = (bottom) => {
-    document.getElementById('alert').style.bottom = bottom;
+    const alertEl = document.getElementById('alert');
+    if (alertEl) {
+      alertEl.style.bottom = bottom;
+    }
   };
 
   const tooltipFade = (opacity) => {
-    document.getElementById('tooltip').style.opacity = opacity;
+    const tooltipEl = document.getElementById('tooltip');
+    if (tooltipEl) {
+      tooltipEl.style.opacity = opacity;
+    }
   }
 
   useEffect(() => {
@@ -281,7 +287,7 @@ const WilliamOfoegbu = ({ origin }) => {
         bgColor={bgColor}
         onScroll={handleScroll}
       />
-        <AlertContainer>
+        {/* <AlertContainer>
           <DismissableAlert id="alert">
             <Tooltip id="tooltip">Get tickets here!</Tooltip>
             <CasaLogo height="75" width="75" src="/images/casalogo.png" onClick={handleCasaConClick} />
@@ -290,7 +296,7 @@ const WilliamOfoegbu = ({ origin }) => {
             </AlertContent>
             <AlertCloseButton onClick={() => handle('-500px')}>&#10006;</AlertCloseButton>
           </DismissableAlert>
-        </AlertContainer>
+        </AlertContainer> */}
         <MainContent>
           <PageContent id="page-content">
             <DemosSection inView />
