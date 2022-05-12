@@ -191,7 +191,7 @@ const NavBar = ({ open }) => {
               <NavLinkDivider />
               <NavLinkShine onClick={() => scrollTo('about-me')}>ABOUT ME</NavLinkShine>
               <NavLinkDivider />
-              <NavLinkShine onClick={() => scrollTo('testimonials')}>TESTIMONIALS</NavLinkShine>
+              <NavLinkShine onClick={() => scrollTo('testimonials')}>CLIENTS</NavLinkShine>
               <NavLinkDivider />
               <NavLinkShine onClick={() => scrollTo('contact')}>CONTACT</NavLinkShine>
             </NavLinkContainer>
@@ -210,7 +210,7 @@ const NavBar = ({ open }) => {
                   ABOUT ME
                 </MobileNavLink>
                 <MobileNavLink onClick={() => handleMobileNavClick('testimonials')}>
-                  TESTIMONIALS
+                  CLIENTS
                 </MobileNavLink>
                 <MobileNavLink onClick={() => handleMobileNavClick('contact')}>
                   CONTACT

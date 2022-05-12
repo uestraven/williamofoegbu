@@ -62,7 +62,7 @@ const AlertContainer = styled('div')`
 `;
 
 const DismissableAlert = styled('div')`
-    height: 100px;
+    height: 110px;
     width: 80%;
     z-index: 100;
     color: black;
@@ -92,7 +92,7 @@ const DismissableAlert = styled('div')`
 const AlertContent = styled('div')`
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
   @media only screen and (max-width: 1165px) {
@@ -171,6 +171,7 @@ const WilliamOfoegbu = ({ origin }) => {
   const [picsInView, setPicsInView] = useState(false);
   const [aboutMeInView, setAboutMeInView] = useState(false);
   const [contactInView, setContactInView] = useState(false);
+  const [testimonialInView, setTestimonialInView] = useState(false);
 
   const handleScroll = () => {
     const scrollThresholds = {
@@ -179,6 +180,7 @@ const WilliamOfoegbu = ({ origin }) => {
       pics: { desktop: 1505, mobile: 2120 },
       aboutMe: { desktop: 2110, mobile: 3125 },
       contact: { desktop: 3100, mobile: 4920 },
+      testimonials: { desktop: 2600, mobile: 1000 },
     };
     const bgColorMap = {
       white: '#ffffff',
@@ -193,8 +195,12 @@ const WilliamOfoegbu = ({ origin }) => {
     const device = innerWidth <= 1165 ? 'mobile' : 'desktop';
 
     const isWithinThreshold = (start, end) => {
+      console.log(start);
       const startThreshold = scrollThresholds[start][device];
+      console.log(startThreshold);
       const endThreshold = end ? scrollThresholds[end][device] : Number.MAX_SAFE_INTEGER;
+      console.log(endThreshold);
+      console.log(scrollY >= startThreshold && scrollY < endThreshold);
       return scrollY >= startThreshold && scrollY < endThreshold;
     }
 
@@ -211,10 +217,13 @@ const WilliamOfoegbu = ({ origin }) => {
       if (bgColor !== bgColorMap.green) setBgColor(bgColorMap.green);
       if (!picsInView) setPicsInView(true);
       ReactGA.pageview('Pics');
-    } else if (isWithinThreshold('aboutMe', 'contact')) {
+    } else if (isWithinThreshold('aboutMe', 'testimonials')) {
       if (bgColor !== bgColorMap.seaFoam) setBgColor(bgColorMap.seaFoam);
       if (!aboutMeInView) setAboutMeInView(true);
       ReactGA.pageview('About me');
+    } else if (isWithinThreshold('testimonials', 'contact')) {
+      console.log('we here');
+      if (!testimonialInView) setTestimonialInView(true);
     } else if (isWithinThreshold('contact', null)) {
       if (bgColor !== bgColorMap.blue) setBgColor(bgColorMap.blue);
       if (!contactInView) setContactInView(true);
@@ -225,7 +234,7 @@ const WilliamOfoegbu = ({ origin }) => {
   };
 
   const handleCasaConClick = () => {
-    window.open('https://casacon.nardio.net/', '_blank').focus();
+    window.open('https://princeoftennismovie.com/', '_blank').focus();
   };
 
   const handle = (bottom) => {
@@ -287,23 +296,25 @@ const WilliamOfoegbu = ({ origin }) => {
         bgColor={bgColor}
         onScroll={handleScroll}
       />
-        {/* <AlertContainer>
+        <AlertContainer>
           <DismissableAlert id="alert">
-            <Tooltip id="tooltip">Get tickets here!</Tooltip>
-            <CasaLogo height="75" width="75" src="/images/casalogo.png" onClick={handleCasaConClick} />
+            {/* <Tooltip id="tooltip">Check it out!</Tooltip> */}
+            <CasaLogo style={{ cursor: 'pointer'}} src="/images/ryomalogo.png" onClick={handleCasaConClick} />
             <AlertContent>
-              JOIN WILLIAM OFOEGBU LIVE AT <CasaCon height="50" src="/images/casacon.png" /> (DEC 17-19)
+              <div><b>{'Check out William as Boo in the smash hit: Ryoma! The Prince of Tennis <Decide>!'}</b></div>
+              <div><b>In theaters May 12!</b></div>
+              {/* JOIN WILLIAM OFOEGBU LIVE AT <CasaCon height="50" src="/images/casacon.png" /> (DEC 17-19) */}
             </AlertContent>
             <AlertCloseButton onClick={() => handle('-500px')}>&#10006;</AlertCloseButton>
           </DismissableAlert>
-        </AlertContainer> */}
+        </AlertContainer>
         <MainContent>
           <PageContent id="page-content">
             <DemosSection inView />
             <ResumeSection inView={resumeInView} />
             <PicsSection inView={picsInView} />
             <AboutMeSection inView={aboutMeInView} />
-            <TestimonialsSection />
+            <TestimonialsSection inView={testimonialInView} />
             <ContactSection inView={contactInView} />
           </PageContent>
         </MainContent>

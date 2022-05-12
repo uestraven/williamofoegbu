@@ -106,7 +106,8 @@ const socialMedias = [
     {icon: '/images/icons/YT.webp', url: 'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCSAI13Tr1KpQHPfVTabAVMQ%3Ffbclid%3DIwAR2jb-1offZytsvAwv8N7iZ8S6WZwOVlLCHGJ6Y4ccyXn4qrlo-4Xb0uRGY&h=AT3HWIzxXXA_KsLIZggWAPW84fhbycL1aQTkCjVE0_ZYQvCuVtAbiTKsskOlSkxn8tQlottctFrB6OoIq2hD7LjmPi2aSC9vdUBGPsO-an_sAWiNKPjeIhsUXGqGqtuEznCGj39p4aj643343tw'},
     {icon: '/images/icons/FB.webp', url: 'https://www.facebook.com/WilliamOfoegbuVO'},
     {icon: '/images/icons/Tumblr.webp', url: 'http://gooddemongonebad.tumblr.com'},
-    {icon: '/images/icons/twitter.webp', url: 'https://twitter.com/William_Ofoegbu'}
+    {icon: '/images/icons/twitter.webp', url: 'https://twitter.com/William_Ofoegbu'},
+    // {icon: '/images/icons/linkedin.webp', url: 'https://www.linkedin.com/in/william-ofoegbu-08160a221/'}
 ];
 
 const EmailForm = () => {

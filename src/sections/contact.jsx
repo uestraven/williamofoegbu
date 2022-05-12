@@ -26,11 +26,11 @@ const ImageContainer = styled('div')`
         }
         @keyframes contact-slide {
             0% {
-                margin-left: -1000px;
+                margin-right: -1000px;
                 transform: rotate(0);
             }
             100% {
-                margin-left: 0;
+                margin-right: 0;
                 transform: rotate(360deg);
             }
         }
@@ -47,14 +47,14 @@ const CharacterImage = styled('img')`
 
 const ContactSection = ({ inView }) => (
     <Layout id="contact">
-        <ImageContainer animation={inView}>
-            <CharacterImage src="/images/commissionwilliamo2.png" />
-        </ImageContainer>
         <ContentContainer>
             <Card title="CONTACT">
                 <EmailForm />
             </Card>
         </ContentContainer>
+        <ImageContainer animation={inView}>
+            <CharacterImage src="/images/commissionwilliamo2.png" />
+        </ImageContainer>
     </Layout>
 );
 

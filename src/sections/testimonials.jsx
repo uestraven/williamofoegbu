@@ -3,6 +3,38 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import Card from '../components/card';
 
+const LeftImageContainer = styled('div')`
+    @media only screen and (min-width: 1165px) {
+        display: ${props => props.animation ? 'flex' : 'none'};
+        justify-content: center;
+        align-items: center;
+        img {
+            animation-name: ${props => props.animation ? 'testimonial-slide-left' : 'none'};
+            animation-duration: 1.5s;
+            animation-direction: normal;
+        }
+        @keyframes testimonial-slide-left {
+            0% {
+                margin-left: -1000px;
+                transform: rotate(0);
+            }
+            100% {
+                margin-left: 0;
+                transform: rotate(360deg);
+            }
+        }
+    }
+    @media only screen and (max-width: 1165px) {
+        width: 100%;
+        display: flex;
+    }
+`;
+
+const CharacterImage = styled('img')`
+    max-height: 300px;
+    cursor: pointer;
+`;
+
 const CarouselWrapper = styled('div')`
     display: flex;
     justify-content: space-between;
@@ -28,7 +60,7 @@ const LeftArrow = styled('button')`
 `;
 
 const ContentWrapper = styled('div')`
-    width: 75%;
+    /** width: 75%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,36 +111,36 @@ const SelectorButton = styled('button')`
 
 const testimonials = [
     {
+        img: '/images/logos/elevenarts.png',
+        name: 'Eleven Arts',
+    },
+    {
+        img: '/images/logos/Soundcadence.png',
+        name: 'Sound Cadence Studios',
+    },
+    {
+        img: '/images/logos/Dimensionalink.jpg',
+        name: 'Dimensional Ink Games',
+    },
+    {
+        img: '/images/logos/goodshepherd.png',
+        name: 'Good Shepherd Entertainment',
+    },
+    {
+        img: '/images/logos/KingsIsle.webp',
+        name: 'KingsIsle Entertainment',
+    },
+    {
+        img: '/images/logos/Warnerbros.png',
+        name: 'Warner Bros. Games',
+    },
+    {
         quote: 'You guys take notes. This is an actor!',
         name: 'Sonny Strait, Sonny Strait Studios'
-    },
-    {
-        quote: 'Props to you for it! You did great work, everyone is thrilled.',
-        name: 'Alex Keller, Dimensional Ink Games',
-    },
-    {
-        quote: 'Thanks, William! You did a fantastic job.',
-        name: 'Matt Forbeck, Good Shepherd Entertainment',
-    },
-    {
-        quote: 'I really appreciate your help. This is excellent!',
-        name: 'Goodluck Ofoegbu, GNO Modeling Research',
-    },
-    {
-        quote: 'Heatwave is awesome. My second-favorite Rogue. You did a most excellent job portraying him. I definitely feel the aster when I fight him.',
-        name: 'Steven Taiclet, DC Universe Online fan',
-    },
-    {
-        quote: 'Oh my gosh… It is SO GOOD!!! You are just perfect in this too! You are super talented! Thank you! My husband was cracking up big time!',
-        name: 'Dana Freitag, Voice Over Artist',
-    },
-    {
-        quote: 'You got nothing but praise with these sets. My colleagues were very impressed with the energy and the intensity you put into this - we had never gotten anything quite like that before! Our writer also pointed out that the characters sound exactly like what he imagined when writing the scripts, and that he doubted we were going to get anything that matched his vision this well.',
-        name: 'Arthur, Age of the Ring Team'
     }
 ];
 
-const TestimonialsSection = () => {
+const TestimonialsSection = ({ inView }) => {
     const [index, setIndex] = useState(0);
     const getNext = (shouldIncrement) => {
         if (shouldIncrement) {
@@ -119,13 +151,20 @@ const TestimonialsSection = () => {
     };
     return (
         <Layout id="testimonials">
-            <Card title="TESTIMONIALS"
+            <LeftImageContainer animation={inView}>
+                <CharacterImage
+                    id="animate-testimonials-left"
+                    src="/images/triographic.png"
+                    onClick={() => console.log('hello')}
+                />
+            </LeftImageContainer>
+            <Card title="CLIENTS"
                 footer={
                     <div>
                         {
-                            testimonials.map(({ quote, name }, i) => (
+                            testimonials.map(({ name }, i) => (
                                 <SelectorButton
-                                    key={`${quote}_${name}`}
+                                    key={name}
                                     onClick={() => setIndex(i)}
                                     className={i === index ? 'active': null}
                                 />)
@@ -138,9 +177,10 @@ const TestimonialsSection = () => {
                 <LeftArrow onClick={() => getNext(false)} />
                 <ContentWrapper>
                     <TextWrapper>
-                        <Quote>
+                        {testimonials[index].img && (<img height="125" src={testimonials[index].img} />)}
+                        {testimonials[index].quote && (<Quote>
                             {testimonials[index].quote}
-                        </Quote>
+                        </Quote>)}
                         <Name>
                             {testimonials[index].name}
                         </Name>

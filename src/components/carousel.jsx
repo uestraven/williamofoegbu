@@ -76,6 +76,8 @@ const SelectorButton = styled('button')`
 `;
 
 const Carousel = ({ data }) => {
+    console.log('hello');
+    console.log(data[0].img);
     const [index, setIndex] = useState(0);
     const getNext = (shouldIncrement) => {
         if (shouldIncrement) {
@@ -89,9 +91,10 @@ const Carousel = ({ data }) => {
             <LeftArrow onClick={() => getNext(false)} />
             <ContentWrapper>
                 <TextWrapper>
-                    <Quote>
+                    <img src="/images/logos/elevenarts.png" />
+                    {/* <Quote>
                         {data[index].quote}
-                    </Quote>
+                    </Quote> */}
                     <Name>
                         {data[index].name}
                     </Name>

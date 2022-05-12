@@ -64,6 +64,12 @@ const DownloadLink = styled('a')`
     }
 `;
 
+const ResumePic = styled('img')`
+    max-width: 100%;
+    height: auto;
+
+`;
+
 const ResumeSection = ({ inView }) => {
     const { play, isPlaying } = AudioPlayer(soundClips_plasticMan, true);
 
@@ -79,7 +85,8 @@ const ResumeSection = ({ inView }) => {
         <Layout id="resume" reverse>
             <ContentContainer>
                 <Card title="R&Eacute;SUM&Eacute;">
-                    <PdfViewer />
+                    {/* <PdfViewer /> */}
+                    <div style={{ display: 'flex', justifyContent: 'center' }}><ResumePic src="/images/resume-pic.jpg" /></div>
                     <LinkContainer>
                         <DownloadLink href="/docs/Resume2021B.pdf" download>
                             Download

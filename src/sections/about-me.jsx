@@ -81,14 +81,22 @@ const AboutMeSection = ({ inView }) => {
         <Layout id="about-me" reverse>
             <ContentContainer>
                 <Card title="ABOUT ME">
-                    <Paragraph>Hi :)</Paragraph>
-                    <Paragraph>I love bringing characters to life. Over the years, I’ve sharpened and polished my wide array of voices not only to breathe new life into loving, scary, cheerful, and/or intense characters that you and your audiences will love to hear but also to bring reliability, encouragement, guidance, and even honor that anyone could admire along with your products, services, and identity!</Paragraph>
-                    <Paragraph>Over the decades, I’ve done my best and more on stage, on-camera, behind the mic, and behind the scenes to give audiences, viewers, and listeners the best performances possible (Pepsi, Microsoft, Dimensional Ink Games, Good Shepherd Entertainment, and more)! I now explicitly focus on the world of voice over. I’ve had great coaches to help me ensure that I deliver the best vocal performances (Chris Sabat, Sean Schemmel, Debi Derriberry, and more), and I continue to work and practice regularly in my home studio to keep my skills razor sharp!</Paragraph>
-                    <Paragraph>My name is William Ofoegbu. I’m based in Texas, and I am a voice actor that you can depend on!</Paragraph>
-                    <Paragraph>Thanks for checking out my page! Have a great day!</Paragraph>
+                    <Paragraph>William Ofoegbu is a Texas-based, African American voice actor who values happiness, peace, determination, doing his best, and the ying-yang of relaxation and thoroughness. He was born in Toronto, grew up in San Antonio, earned his Associate of Arts in Theatre from San Antonio College (and a Bachelor’s of Science in Communication later on), and booked his first principal commercial role moments later.</Paragraph>
+                    <Paragraph>{'William’s refined aptitude and resounding voice earned him roles such as Heatwave, Plastic Man (DC Universe Online), Grizztopher (Wizard101), and Boo (Ryoma! The Prince of Tennis <Decide>)'}</Paragraph>
+                    <Paragraph>Other than performance, William loves writing creative stories, cooking and eating delicious food, and learning new things (currently practicing American Sign Language and playing harmonica). Most of all, he loves anime, manga, creativity, and his friends and family.</Paragraph>
+                    <Paragraph>He was also featured in commercials for Pepsi, KFC, UTSA, Daily Greens, Microsoft, and appeared in From Dusk Till Dawn: The Series. You can find him online via Twitter (@William_Ofoegbu) and Facebook (@WilliamOfoegbuVO).</Paragraph>
                 </Card>
-                <Card title="STUDIO" centered>
-                    Information available upon request.
+                <Card title="HOME STUDIO" centered>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                        <div><b>Interface:</b> Solid State Logic SSL2</div>
+                        <div><b>Microphone:</b> BeesNeez BU87i </div>
+                        <div><b>DAW:</b> Reaper</div>
+                        <div><b>Internet:</b> Hardwired 300 Mbps Down & 20 Mbps Up</div>
+                        <div>Source Connect, Zoom, Discord, Skype, Google, CleanFeed, WeTransfer</div>
+                        <div>Acoustically treated space with Sonic Acoustics 3” pyramid foam</div>
+                        <div>Additional 25” monitor for video and script</div>
+                        <div style={{ marginTop: '15px' }}><b>Backup Equipment:</b> AT2020 Cardioid Condenser microphone & Scarlett Solo 3rd Gen</div>
+                    </div>
                 </Card>
             </ContentContainer>
             <ImageContainer animation={inView}>
