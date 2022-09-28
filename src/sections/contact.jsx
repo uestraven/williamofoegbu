@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import Card from '../components/card';
+import AudioPlayer from '../components/audio-player';
+import { soundClips_william } from '../../public/sounds';
+import ReactGA from 'react-ga';
 
 import dynamic from 'next/dynamic';
 const EmailForm = dynamic(import('../components/email-form.jsx'), { ssr: false });
@@ -43,20 +46,35 @@ const ImageContainer = styled('div')`
 
 const CharacterImage = styled('img')`
     max-height: 300px;
+    cursor: pointer;
 `;
 
-const ContactSection = ({ inView }) => (
-    <Layout id="contact">
-        <ContentContainer>
-            <Card title="CONTACT">
-                <EmailForm />
-            </Card>
-        </ContentContainer>
-        <ImageContainer animation={inView}>
-            <CharacterImage src="/images/commissionwilliamo2.png" />
-        </ImageContainer>
-    </Layout>
-);
+const ContactSection = ({ inView }) => {
+    const { play, isPlaying } = AudioPlayer(soundClips_william, true);
+    const handleClickCharacter = () => {
+        if (!isPlaying) play();
+        ReactGA.event({
+            category: 'Character Click',
+            action: 'Clicked Koku Ganaha'
+        });
+    };
+    return (
+        <Layout id="contact">
+            <ContentContainer>
+                <Card title="CONTACT">
+                    <EmailForm />
+                </Card>
+            </ContentContainer>
+            <ImageContainer animation={inView}>
+                <CharacterImage
+                    id="animate-contact"
+                    src="/images/commissionwilliamo2.png"
+                    onClick={handleClickCharacter}
+                />
+            </ImageContainer>
+        </Layout>
+    );
+};
 
 ContactSection.defaultProps = {
     inView: false

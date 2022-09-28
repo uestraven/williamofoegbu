@@ -222,8 +222,8 @@ const DemosSection = ({ inView }) => {
                         </DemoSection>
                         <VideoSection>
                             <VideoPlayer
-                                source="https://www.youtube.com/embed/9r5YZO-lm6I"
-                                title="Studio Sound - William Ofoegbu"
+                                source="https://www.youtube.com/embed/DtQyDuKkDYM"
+                                title="Mini Visual Reel William Ofoegbu"
                             />
                             <DownloadButtonSection>
                                 <DownloadButton

@@ -234,7 +234,7 @@ const WilliamOfoegbu = ({ origin }) => {
   };
 
   const handleCasaConClick = () => {
-    window.open('https://princeoftennismovie.com/', '_blank').focus();
+    window.open('https://www.shoutfactory.com/product/ryoma-the-prince-of-tennis#disqus_thread', '_blank').focus();
   };
 
   const handle = (bottom) => {
@@ -289,6 +289,8 @@ const WilliamOfoegbu = ({ origin }) => {
         <meta name="twitter:description" content="William Ofoegbu's Personal Site" />
         <meta name="twitter:image" content="https://williamofoegbu.com/images/williamosamplecolor.png" />
         <meta name="twitter:image:alt" content="William Ofoegbu: The Man, the Myth, the Legend" />
+
+        <script src="https://kit.fontawesome.com/d11e59e15a.js" crossOrigin="anonymous"></script>
       </Head>
 
       <NavBar open={navBarOpen} />
@@ -301,8 +303,7 @@ const WilliamOfoegbu = ({ origin }) => {
             {/* <Tooltip id="tooltip">Check it out!</Tooltip> */}
             <CasaLogo style={{ cursor: 'pointer'}} src="/images/ryomalogo.png" onClick={handleCasaConClick} />
             <AlertContent>
-              <div><b>{'Check out William as Boo in the smash hit: Ryoma! The Prince of Tennis <Decide>!'}</b></div>
-              <div><b>In theaters May 12!</b></div>
+              <div style={{ height: '100%', fontWeight: '600', display: 'flex', alignItems: 'center' }}>Check out William as Boo in Ryoma! The Prince of Tennis! on Blu-Ray and DVD!</div>
               {/* JOIN WILLIAM OFOEGBU LIVE AT <CasaCon height="50" src="/images/casacon.png" /> (DEC 17-19) */}
             </AlertContent>
             <AlertCloseButton onClick={() => handle('-500px')}>&#10006;</AlertCloseButton>

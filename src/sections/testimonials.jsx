@@ -111,6 +111,10 @@ const SelectorButton = styled('button')`
 
 const testimonials = [
     {
+        img: '/images/logos/crunchyroll.png',
+        name: 'Crunchyroll',
+    },
+    {
         img: '/images/logos/elevenarts.png',
         name: 'Eleven Arts',
     },
