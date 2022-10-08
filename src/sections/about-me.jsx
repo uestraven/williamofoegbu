@@ -48,22 +48,6 @@ const CharacterImage = styled('img')`
     cursor: pointer;
 `;
 
-// const CharacterImage = styled('img')`
-//     max-height: 300px;
-//     height: auto;
-//     position: absolute;
-// `;
-
-// const WordImage = styled('img')`
-//     max-height: 200px;
-//     position: absolute;
-//     left: 100px;
-//     top: 225px;
-//     @media only screen and (max-width: 1165px) {
-//         max-height: 150px;
-//     }
-// `;
-
 const Paragraph = styled('p')`
     margin-top: 0;
 `;
@@ -81,8 +65,8 @@ const AboutMeSection = ({ inView }) => {
         <Layout id="about-me" reverse>
             <ContentContainer>
                 <Card title="ABOUT ME">
-                    <Paragraph>William Ofoegbu is a Texas-based, African American voice actor who values happiness, peace, determination, doing his best, and the ying-yang of relaxation and thoroughness. He was born in Toronto, grew up in San Antonio, earned his Associate of Arts in Theatre from San Antonio College (and a Bachelor’s of Science in Communication later on), and booked his first principal commercial role moments later.</Paragraph>
-                    <Paragraph>{'William’s refined aptitude and resounding voice earned him roles such as Heatwave, Plastic Man (DC Universe Online), Grizztopher (Wizard101), and Boo (Ryoma! The Prince of Tennis <Decide>)'}</Paragraph>
+                    <Paragraph>William Ofoegbu is a Texas-based, African American voice actor who values happiness, peace, determination, doing his best, and the yin-yang of relaxation and thoroughness. He was born in Toronto, grew up in San Antonio, earned his Associate of Arts in Theatre from San Antonio College (and a Bachelor's of Science in Communication later on), and booked his first principal commercial role moments later.</Paragraph>
+                    <Paragraph>{'William\'s refined aptitude and resounding voice earned him roles such as Heatwave, Plastic Man (DC Universe Online), Grizztopher (Wizard101), and Boo (Ryoma! The Prince of Tennis <Decide>)'}</Paragraph>
                     <Paragraph>Other than performance, William loves writing creative stories, cooking and eating delicious food, and learning new things (currently practicing American Sign Language and playing harmonica). Most of all, he loves anime, manga, creativity, and his friends and family.</Paragraph>
                     <Paragraph>He was also featured in commercials for Pepsi, KFC, UTSA, Daily Greens, Microsoft, and appeared in From Dusk Till Dawn: The Series. You can find him online via Twitter (@William_Ofoegbu) and Facebook (@WilliamOfoegbuVO).</Paragraph>
                 </Card>

@@ -18,15 +18,6 @@ const ContentContainer = styled('div')`
     }
 `;
 
-// import React from 'react';
-// import styled from 'styled-components';
-// import ReactGA from 'react-ga';
-
-// const SVGWrapper = styled('svg')`
-//     height: 15px;
-//     cursor: pointer;
-// `;
-
 const SVGWrapper = styled('svg')`
     height: 15px;
     cursor: pointer;
@@ -57,8 +48,6 @@ const DownloadButton = ({ path, text }) => {
         </DownloadLink>
     );
 };
-
-// export default DownloadButton;
 
 
 const ImageContainer = styled('div')`

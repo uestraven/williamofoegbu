@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import Card from '../components/card';
+import AudioPlayer from '../components/audio-player';
+import { soundClips_caranLambar } from '../../public/sounds';
+import ReactGA from 'react-ga';
 
 const LeftImageContainer = styled('div')`
     @media only screen and (min-width: 1165px) {
@@ -153,13 +156,24 @@ const TestimonialsSection = ({ inView }) => {
             setIndex(index - 1 < 0 ? testimonials.length - 1 : index - 1);
         }
     };
+
+    const { play, isPlaying } = AudioPlayer(soundClips_caranLambar, true);
+
+    const handleClickCharacter = () => {
+        if (!isPlaying) play();
+        ReactGA.event({
+            category: 'Character Click',
+            action: 'Clicked Caran Lambar'
+        });
+    };
+
     return (
         <Layout id="testimonials">
             <LeftImageContainer animation={inView}>
                 <CharacterImage
                     id="animate-testimonials-left"
                     src="/images/triographic.png"
-                    onClick={() => console.log('hello')}
+                    onClick={handleClickCharacter}
                 />
             </LeftImageContainer>
             <Card title="CLIENTS"

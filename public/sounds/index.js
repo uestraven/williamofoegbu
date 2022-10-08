@@ -52,6 +52,22 @@ export const soundClips_kokuGanaha = [
     '/sounds/koku_ganaha/KOKU_Yeah.mp3',
 ];
 
+export const soundClips_caranLambar = [
+    '/sounds/caran_lambar/Atk_3.mp3',
+    '/sounds/caran_lambar/Atk_8.mp3',
+    '/sounds/caran_lambar/Camp_2.mp3',
+    '/sounds/caran_lambar/Charge_2.mp3',
+    '/sounds/caran_lambar/Combat_7.mp3',
+    '/sounds/caran_lambar/Death_1.mp3',
+    '/sounds/caran_lambar/Disengage_9.mp3',
+    '/sounds/caran_lambar/Help_1.mp3',
+    '/sounds/caran_lambar/Mad_Chief.mp3',
+    '/sounds/caran_lambar/NMSalute_1.mp3',
+    '/sounds/caran_lambar/Salute_1.mp3',
+    '/sounds/caran_lambar/Select_2.mp3',
+    '/sounds/caran_lambar/Select_7.mp3',
+];
+
 export const soundClips_william = [
     '/sounds/william/Thanks.mp3',
 ];

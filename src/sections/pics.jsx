@@ -45,30 +45,6 @@ const CharacterImage = styled('img')`
     cursor: pointer;
 `;
 
-// const ImageContainer = styled('div')`
-//     width: 31%;
-//     position: relative;
-//     @media only screen and (max-width: 1165px) {
-//         width: 100%;
-//     }
-// `;
-
-// const CharacterImage = styled('img')`
-//     max-height: 300px;
-//     height: auto;
-//     position: absolute;
-// `;
-
-// const WordImage = styled('img')`
-//     max-height: 200px;
-//     position: absolute;
-//     left: 50px;
-//     top: 225px;
-//     @media only screen and (max-width: 1165px) {
-//         max-height: 150px;
-//     }
-// `;
-
 const PhotoViewer = styled('div')`
     display: flex;
     gap: 15px;
