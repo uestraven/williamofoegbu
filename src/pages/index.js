@@ -263,6 +263,8 @@ const WilliamOfoegbu = ({ origin }) => {
     }, 7000);
   }, []);
 
+  const showBanner = false;
+
   return (
     <>
       <Head>
@@ -298,17 +300,19 @@ const WilliamOfoegbu = ({ origin }) => {
         bgColor={bgColor}
         onScroll={handleScroll}
       />
-        <AlertContainer>
-          <DismissableAlert id="alert">
-            {/* <Tooltip id="tooltip">Check it out!</Tooltip> */}
-            <CasaLogo style={{ cursor: 'pointer'}} src="/images/ryomalogo.png" onClick={handleCasaConClick} />
-            <AlertContent>
-              <div style={{ height: '100%', fontWeight: '600', display: 'flex', alignItems: 'center' }}>Check out William as Boo in Ryoma! The Prince of Tennis! on Blu-Ray and DVD!</div>
-              {/* JOIN WILLIAM OFOEGBU LIVE AT <CasaCon height="50" src="/images/casacon.png" /> (DEC 17-19) */}
-            </AlertContent>
-            <AlertCloseButton onClick={() => handle('-500px')}>&#10006;</AlertCloseButton>
-          </DismissableAlert>
-        </AlertContainer>
+        {showBanner && (
+          <AlertContainer>
+            <DismissableAlert id="alert">
+              {/* <Tooltip id="tooltip">Check it out!</Tooltip> */}
+              <CasaLogo style={{ cursor: 'pointer'}} src="/images/ryomalogo.png" onClick={handleCasaConClick} />
+              <AlertContent>
+                <div style={{ height: '100%', fontWeight: '600', display: 'flex', alignItems: 'center' }}>Check out William as Boo in Ryoma! The Prince of Tennis! on Blu-Ray and DVD!</div>
+                {/* JOIN WILLIAM OFOEGBU LIVE AT <CasaCon height="50" src="/images/casacon.png" /> (DEC 17-19) */}
+              </AlertContent>
+              <AlertCloseButton onClick={() => handle('-500px')}>&#10006;</AlertCloseButton>
+            </DismissableAlert>
+          </AlertContainer>
+        )}
         <MainContent>
           <PageContent id="page-content">
             <DemosSection inView />

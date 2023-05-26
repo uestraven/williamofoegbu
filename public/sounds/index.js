@@ -1,29 +1,14 @@
 export const soundClips_plasticMan = [
-    '/sounds/plastic_man/FPPLASTICMANEP40_AGGRO_4.mp3',
     '/sounds/plastic_man/FPPLASTICMANEP40_ALLIES_BATTLE_1.mp3',
-    '/sounds/plastic_man/FPPLASTICMANEP40_ALLIES_BATTLE_4.mp3',
     '/sounds/plastic_man/FPPLASTICMANEP40_ALLIES_OBSERVE_1.mp3',
     '/sounds/plastic_man/FPPLASTICMANEP40_ALLIES_OBSERVE_5.mp3',
     '/sounds/plastic_man/FPPLASTICMANEP40_ALLIES_SPAWN_3.mp3',
-    '/sounds/plastic_man/FPPLASTICMANEP40_DEATH_2.mp3',
-    '/sounds/plastic_man/FPPLASTICMANEP40_DEATH_6.mp3',
     '/sounds/plastic_man/FPPLASTICMANEP40_SPECIAL_ATTACK_4.mp3',
     '/sounds/plastic_man/PLASTICMANEP40_ALLIES_OBSERVE_H_4.mp3',
-    '/sounds/plastic_man/PLASTICMANEP40_ALLIES_OBSERVE_V_2.mp3',
-    '/sounds/plastic_man/PLASTICMANEP40_ALLIES_SPAWN_V_5.mp3',
-    '/sounds/plastic_man/PLASTICMANEP40_DEATH_3.mp3',
-    '/sounds/plastic_man/PLASTICMANEP40_DEATH_4.mp3',
     '/sounds/plastic_man/PLASTICMANEP40_SPECIAL_ATTACK_4.mp3',
 ];
 
 export const soundClips_heatwave = [
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_BATTLE_H_3.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_BATTLE_H_4.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_BATTLE_H_5.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_BATTLE_V_1.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_SPAWN_H_2.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_ALLIES_SPAWN_V_3.mp3',
-    '/sounds/heatwave/FPHEATWAVEEP40_EP40_SOLO_WAVE_INTRO_03.mp3',
     '/sounds/heatwave/HEATWAVEEP40_AGGRO_1.mp3',
     '/sounds/heatwave/HEATWAVEEP40_BATTLE_H_2.mp3',
     '/sounds/heatwave/HEATWAVEEP40_BATTLE_H_4.mp3',
@@ -54,18 +39,10 @@ export const soundClips_kokuGanaha = [
 
 export const soundClips_caranLambar = [
     '/sounds/caran_lambar/Atk_3.mp3',
-    '/sounds/caran_lambar/Atk_8.mp3',
-    '/sounds/caran_lambar/Camp_2.mp3',
-    '/sounds/caran_lambar/Charge_2.mp3',
-    '/sounds/caran_lambar/Combat_7.mp3',
     '/sounds/caran_lambar/Death_1.mp3',
     '/sounds/caran_lambar/Disengage_9.mp3',
     '/sounds/caran_lambar/Help_1.mp3',
-    '/sounds/caran_lambar/Mad_Chief.mp3',
-    '/sounds/caran_lambar/NMSalute_1.mp3',
     '/sounds/caran_lambar/Salute_1.mp3',
-    '/sounds/caran_lambar/Select_2.mp3',
-    '/sounds/caran_lambar/Select_7.mp3',
 ];
 
 export const soundClips_william = [

@@ -149,6 +149,74 @@ const PicsSection = ({ inView }) => {
                                 src="/images/headshots/singing.jpg"
                                 onClick={() => setDisplayPhoto("/images/headshots/singing.jpg")}
                             />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20220512_211844~2.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20220512_211844~2.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20220512_213052~2.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20220512_213052~2.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20220606_220048.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20220606_220048.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20220606_220110~2.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20220606_220110~2.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20220606_220133.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20220606_220133.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20221203_124444.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20221203_124444.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20221203_125142.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20221203_125142.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20221204_105242.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20221204_105242.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20221204_105353.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20221204_105353.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230106_175322.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230106_175322.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230109_131315.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230109_131315.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230109_131357.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230109_131357.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230109_131400.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230109_131400.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230210_174418.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230210_174418.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230210_174427.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230210_174427.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230301_143557.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230301_143557.jpg")}
+                            />
+                            <Thumbnail
+                                src="/images/headshots/IMG_20230308_104043.jpg"
+                                onClick={() => setDisplayPhoto("/images/headshots/IMG_20230308_104043.jpg")}
+                            />
                         </ThumbnailSection>
                         <PhotoSection>
                             <Photo src={displayPhoto} />

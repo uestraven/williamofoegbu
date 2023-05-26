@@ -192,7 +192,7 @@ const DemosSection = ({ inView }) => {
                             />
                             <AudioController
                                 title="COMMERCIAL"
-                                audio="/sounds/demos/Demo_Commercial_William_Ofoegbu.mp3"
+                                audio="/sounds/demos/WilliamOfoegbu_CommercialDemo_V1.mp3"
                                 show={false}
                                 animate
                             />

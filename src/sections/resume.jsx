@@ -88,7 +88,7 @@ const ResumeSection = ({ inView }) => {
                     {/* <PdfViewer /> */}
                     <div style={{ display: 'flex', justifyContent: 'center' }}><ResumePic src="/images/resume-pic.jpg" /></div>
                     <LinkContainer>
-                        <DownloadLink href="/docs/Resume2021B.pdf" download>
+                        <DownloadLink href="/images/resume-pic.jpg" download>
                             Download
                         </DownloadLink>
                     </LinkContainer>

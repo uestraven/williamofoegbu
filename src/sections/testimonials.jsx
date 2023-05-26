@@ -144,6 +144,10 @@ const testimonials = [
     {
         quote: 'You guys take notes. This is an actor!',
         name: 'Sonny Strait, Sonny Strait Studios'
+    },
+    {
+        quote: 'I\'ve been an audio engineer/producer in VO for years and I can confidently say William is the real deal. He is a joy to work with and he delivers top notch content consistently, as well as he is very conscious of his vocal levels - if you are on the fence, give him a shot. He won\'t disappoint you.',
+        name: 'Joe Miller, Little Orbit'
     }
 ];
 
